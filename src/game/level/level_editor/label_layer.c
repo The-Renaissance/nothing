@@ -551,6 +551,7 @@ int label_layer_event(LabelLayer *label_layer,
     if (color_picker_event(
             &label_layer->color_picker,
             event,
+            camera,
             &changed) < 0) {
         return -1;
     }
